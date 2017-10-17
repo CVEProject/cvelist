@@ -8,6 +8,9 @@ the "plumbing" of sending and receiving the data, but also which
 attributes and metadata are needed in the CVE format to support
 automation. 
 
+See [How to Contribute](https://github.com/CVEProject/cvelist/blob/master/CONTRIBUTING.md)
+for details on participating in this pilot.
+
 This repository holds information included in the [CVE
 List](https://cve.mitre.org) formatted using the [CVE JSON
 format](https://github.com/CVEProject/automation-working-group/tree/master/cve_json_schema). 

@@ -27,7 +27,8 @@ commits](https://help.github.com/articles/signing-commits-with-gpg/).
 
 0.  If you haven't done so already, fork the _cvelist_ repository. 
 
-1.  Ensure your fork is up to date. 
+1.  Ensure your [fork is up to date](https://help.github.com/articles/syncing-a-fork/),
+especially prior to creating a new branch (every time you create a new branch). 
 
 2.  Create a new branch.  We recommend grouping related updates into a
 single submission and using a separate branch for each submission. 
@@ -47,6 +48,23 @@ will merge the updated files into the "master" branch and use the
 supplied information to update the associated entries in the CVE List
 itself. 
 
+Here is a visual respresentation of the git process:
+
+```
+github.com/CVEProject/cvelist --> fork --> github.com/$YOU/cvelist
+    ^                                                          |
+    | merge                                                    |
+    |                                                     git clone
+    `-------- Accepted?                                        |
+                  ^                                            V
+                  |                                /localpath/repo/cvelist
+           create | pull request                      |              |
+                  |                                 git branch     git branch
+  github.com/$YOU/cvelist/cve_assign_20170915         |              |
+                  |                                   |              V
+                  |                                   V             some_other_branch
+                  `-- push to your github <-- cve_assign_20170915
+```
 
 ## Contact
 

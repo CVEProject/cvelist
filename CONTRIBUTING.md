@@ -60,7 +60,7 @@ ensure they pass.
 
 5. **Review your updates carefully** and make sure they contain
 **only information you intend to make public**.  Once those reach
-Github.com, it' extremely difficult if not impossible to put it back
+Github.com, it's extremely difficult if not impossible to put it back
 under wraps.  For example, you may be able to check that every CVE id
 is mentioned in one of the references associated with it to avoid
 making public information about a vulnerability ahead of schedule. 

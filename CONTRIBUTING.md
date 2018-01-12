@@ -2,10 +2,10 @@
 
 ## Notes
 
-1.  Only members of the CVE Automation Working Group AND who are also [Root Level CNA's](https://cve.mitre.org/cve/cna.html) should create
+1.  Only [Root CNAs](https://cve.mitre.org/cve/cna.html) or other members of the CVE Automation Working Group should create
 pull requests or open issues in this repository currently.  Going
-forward, we hope to allow progressively wider participation; eg, from
-CNAs generally and then security researchers and other cybersecurity
+forward, we hope to allow wider participation; eg, from
+security researchers and other cybersecurity
 community members.  Until then, others who wish to contribute should
 use the [CVE Request web form](https://cveform.mitre.org). If you are a sub-CNA (e.g. the Kubernetes Project is a sub-CNA of the DWF) you MUST push within your hierarchy first according to the rules within that hierarchy. For example if you are within the DWF you MUST push to your immediate parents fork of the cvelist repo (e.g. for Kubernetes this would be the the DWF cvelist fork at https://github.com/distributedweaknessfiling/cvelist).  
 

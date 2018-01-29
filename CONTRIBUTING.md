@@ -95,10 +95,10 @@ python -m json.tool < CVE-2017-1234.json
 You can also validate against the schema using a variety of tools, e.g. Python jsonschema:
 
 ```
-jsonschema -i CVE_JSON_4.0_min.schema CVE-2017-1234.json
+jsonschema -i CVE-2017-1234.json CVE_JSON_4.0_min_public.schema
 ```
 
-The schema file is available in the [CVE Automation Working Group](https://github.com/CVEProject/automation-working-group/tree/master/cve_json_schema) and [version 4](https://raw.githubusercontent.com/CVEProject/automation-working-group/master/cve_json_schema/CVE_JSON_4.0_min.schema) is currently in use. 
+The schema file is available in the [CVE Automation Working Group](https://github.com/CVEProject/automation-working-group/tree/master/cve_json_schema) and [version 4](https://raw.githubusercontent.com/CVEProject/automation-working-group/master/cve_json_schema/CVE_JSON_4.0_min_public.schema) is currently in use.
 
 
 5. **Review your updates carefully** and make sure they contain

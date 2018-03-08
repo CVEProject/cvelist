@@ -129,11 +129,24 @@ Github reports that the branches can be merged.  If not, say because
 you forgot to ensure your fork was synched with the upstream master,
 make additional commits in your branch to resolve the merge conflicts. 
 
-After a pull request has been submitted, the CVE Team will review the
-submission and work with you to resolve issues.  Then the CVE Team
-will merge the updated files into the "master" branch and use the
-supplied information to update the associated entries in the CVE List
-itself. 
+After a pull request has been submitted, several checks will be
+launched automatically, such as to perform schema validation and check
+ownership.  The checks may add comments and labels to the pull request
+and, by default, Github should notify you via email of those
+automatically.  If the checks identify issues, you will need to
+address them before processing can continue. 
+
+Next, the CVE Team generally will also review the pull request,
+ensuring that descriptions contain product and version information,
+references provide provenance, etc.  As before, reviewers will add
+comments and labels to the pull request if additional issues are
+found, and you will need to address those before processing can
+continue. 
+
+Finally, the CVE Team will add an "accepted" label in the pull
+request, merge the updated files into the "master" branch, and use the
+supplied information to populate the associated entries in the CVE
+List itself. 
 
 Here is a visual respresentation of the git process:
 
@@ -152,6 +165,12 @@ github.com/CVEProject/cvelist --> fork --> github.com/$YOU/cvelist
                   |                                   V             some_other_branch
                   `-- push to your github <-- $YOUR_BRANCH
 ```
+
+Note that you may contact the CVE Team using the [CVE Request web
+form](https://cveform.mitre.org) if you wish to discuss something
+privately.  Note also that pull requests left open for more than 21
+days will be rejected. 
+
 
 ## Contact
 

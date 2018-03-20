@@ -21,6 +21,12 @@ License Terms of Use](https://cve.mitre.org/about/termsofuse.html).
 5.  It is **strongly recommended** that submissions use [signed
 commits](https://help.github.com/articles/signing-commits-with-gpg/). Please note that some hierarchies (e.g. the DWF) require all submissions to be signed. 
 
+6.  Submissions from CNAs should be formatted using the [CVE JSON
+format](https://github.com/CVEProject/automation-working-group/tree/master/cve_json_schema). 
+If you are not familiar with that or do not have tools to work with
+that, have a look at [Vulnogram]https://vulnogram.github.io/), which
+offers a web-based interface for creating and editing information
+about one CVE at a time. 
 
 
 ## Sending Data about CVE Entries to MITRE

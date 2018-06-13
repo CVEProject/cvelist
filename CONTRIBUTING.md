@@ -24,7 +24,7 @@ commits](https://help.github.com/articles/signing-commits-with-gpg/). Please not
 6.  Submissions from CNAs should be formatted using the [CVE JSON
 format](https://github.com/CVEProject/automation-working-group/tree/master/cve_json_schema). 
 If you are not familiar with that or do not have tools to work with
-that, have a look at [Vulnogram]https://vulnogram.github.io/), which
+that, have a look at [Vulnogram](https://vulnogram.github.io/), which
 offers a web-based interface for creating and editing information
 about one CVE at a time. 
 

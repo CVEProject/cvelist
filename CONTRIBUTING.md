@@ -85,7 +85,7 @@ For now, let's assume you've named your branch `$YOUR_BRANCH` you can then chang
 git checkout $YOUR_BRANCH
 ```
 
-By branching against master epxlicitly you can have multiple current branches that can be submitted to your parent CNA seperately. 
+By branching against master explicitly you can have multiple current branches that can be submitted to your parent CNA seperately. 
 
 3. Make changes to one or more files.  **NB:** limit your changes to
 only those portions of the JSON that need to be updated rather than

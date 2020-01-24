@@ -12,7 +12,7 @@ See [How to Contribute](https://github.com/CVEProject/cvelist/blob/master/CONTRI
 for details on participating in this pilot.
 
 This repository holds information included in the [CVE
-List](https://cve.mitre.org) formatted using the [CVE JSON
+List](https://cve.mitre.org/cve/) formatted using the [CVE JSON
 format](https://github.com/CVEProject/automation-working-group/tree/master/cve_json_schema). 
 
 Use of the CVE information in this repository is subject to the [CVE
@@ -34,7 +34,7 @@ complete within 5 minutes.
 
 For ids that have been populated, the files contain the description
 and references that appear in the [CVE
-List](https://cve.mitre.org/cve/cve.html).  They may also contain
+List](https://cve.mitre.org/cve/).  They may also contain
 information about the affected product(s) and problem type(s), which
 CNAs have been supplying when making assignments during the past year
 but which is not included in the CVE List.  And going forward, it is

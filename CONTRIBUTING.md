@@ -7,7 +7,7 @@ pull requests or open issues in this repository currently.  Going
 forward, we hope to allow wider participation; eg, from
 security researchers and other cybersecurity
 community members.  Until then, others who wish to contribute should
-use the [CVE Request web form](https://cveform.mitre.org). If you are a sub-CNA (e.g. the Kubernetes Project is a sub-CNA of the DWF) you MUST push within your hierarchy first according to the rules within that hierarchy. For example if you are within the DWF you MUST push to your immediate parents fork of the cvelist repo (e.g. for Kubernetes this would be the the DWF cvelist fork at https://github.com/distributedweaknessfiling/cvelist).  
+use the [CVE Request web form](https://cveform.mitre.org). If you are a sub-CNA (e.g. the Kubernetes Project is a sub-CNA of the DWF) you MUST push within your hierarchy first according to the rules within that hierarchy. For example if you are within the DWF you MUST push to your immediate parents fork of the cvelist repo (e.g. for Kubernetes this would be the DWF cvelist fork at https://github.com/distributedweaknessfiling/cvelist).  
 
 2.  Only submit information to the MITRE cvelist repo that is intended to become public
 immediately.  There is **no support** for embargoed submissions!!
@@ -24,7 +24,7 @@ commits](https://help.github.com/articles/signing-commits-with-gpg/). Please not
 6.  Submissions from CNAs should be formatted using the [CVE JSON
 format](https://github.com/CVEProject/automation-working-group/tree/master/cve_json_schema). 
 If you are not familiar with that or do not have tools to work with
-that, have a look at [Vulnogram]https://vulnogram.github.io/), which
+that, have a look at [Vulnogram](https://vulnogram.github.io/), which
 offers a web-based interface for creating and editing information
 about one CVE at a time. 
 
@@ -85,7 +85,7 @@ For now, let's assume you've named your branch `$YOUR_BRANCH` you can then chang
 git checkout $YOUR_BRANCH
 ```
 
-By branching against master epxlicitly you can have multiple current branches that can be submitted to your parent CNA seperately. 
+By branching against master explicitly you can have multiple current branches that can be submitted to your parent CNA seperately. 
 
 3. Make changes to one or more files.  **NB:** limit your changes to
 only those portions of the JSON that need to be updated rather than

@@ -45,4 +45,4 @@ the vulnerability, as supported by the full CVE JSON schema.
 ## Contact
 
 Direct questions, comments, or concerns about use of this repo to the CVE
-Team using the [CVE Request web form](https://cveform.mitre.org). 
+Team using the [CVE Request web form.](https://cveform.mitre.org)

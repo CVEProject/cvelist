@@ -1,7 +1,7 @@
 {
     "CVE_data_meta": {
         "ASSIGNER": "psirt@nvidia.com",
-        "ID": "CVE-2022-21816",
+        "ID": "CVE-2022-21815",
         "STATE": "PUBLIC"
     },
     "affects": {
@@ -11,11 +11,11 @@
                     "product": {
                         "product_data": [
                             {
-                                "product_name": "NVIDIA Virtual GPU Software and NVIDIA Cloud Gaming",
+                                "product_name": "NVIDIA GPU Display Driver",
                                 "version": {
                                     "version_data": [
                                         {
-                                            "version_value": "vGPU version 13.x (prior to 13.2), version 11.x (prior to 11.7) and version 8.x (prior 8.10)."
+                                            "version_value": "All GPU Driver versions for Windows"
                                         }
                                     ]
                                 }
@@ -34,7 +34,7 @@
         "description_data": [
             {
                 "lang": "eng",
-                "value": "NVIDIA vGPU software contains a vulnerability in the Virtual GPU Manager (nvidia.ko), where a user in the guest OS can cause a GPU interrupt storm on the hypervisor host, leading to a denial of service."
+                "value": "NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for private IOCTLs where a NULL pointer dereference in the kernel, created within user mode code, may lead to a denial of service in the form of a system crash."
             }
         ]
     },
@@ -52,7 +52,7 @@
                 "description": [
                     {
                         "lang": "eng",
-                        "value": "CWE-284 Improper Access Control"
+                        "value": "CWE-476: NULL Pointer Dereference"
                     }
                 ]
             }
@@ -66,4 +66,4 @@
 	    }
         ]
     }
-}
+ }

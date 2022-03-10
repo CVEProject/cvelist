@@ -46,6 +46,3 @@ the vulnerability, as supported by the full CVE JSON schema.
 
 Direct questions, comments, or concerns about use of this repo to the CVE
 Team using the [CVE Request web form](https://cveform.mitre.org). 
-
-
-## spaces test 2

@@ -4,7 +4,7 @@
 
 1.  Only [Roots]([https://cve.mitre.org/cve/cna.html](https://www.cve.org/PartnerInformation/Partner)) or other members of the CVE Automation Working Group should create
 pull requests or open issues in this repository currently.  Going
-forward, we hope to allow wider participation; eg, from
+forward, we hope to allow wider participation; e.g., from
 security researchers and other cybersecurity
 community members.  Until then, others who wish to contribute should
 use the [CVE Request web form](https://cveform.mitre.org). If you are a sub-CNA (e.g. the Kubernetes Project is a sub-CNA of the DWF) you MUST push within your hierarchy first according to the rules within that hierarchy.  
@@ -32,7 +32,7 @@ about one CVE at a time.
 ## Sending Data about CVE Records to MITRE
 
 0. If you haven't done so already, create an account on Github.com
-and fork the _cvelist_ repository from your parent CNA (e.g. if you are a root CNA you would fork [CVEProject/cvelist](https://github.com/CVEProject/cvelist/) and if you are a DWF sub-CNA you would fork [distributedweaknessfiling/cvelist](https://github.com/distributedweaknessfiling/cvelist)). You can either fork into your own account (e.g. from the command line this is the default), for example, if your account name
+and fork the _cvelist_ repository from your parent CNA (e.g., if you are a Root you would fork [CVEProject/cvelist](https://github.com/CVEProject/cvelist/). You can either fork into your own account (e.g. from the command line this is the default), for example, if your account name
 is `$YOU`, this will result in a new repo named $YOU/cvelist. 
 [**NB**: `$YOU` is used throughout the rest of this file; substitute
 your own account name in any names, commands, URLs, etc.] You can also clone in to an organization

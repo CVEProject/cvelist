@@ -1,0 +1,13 @@
+# To get package manifests Automated integrations start with Dependabot version updates, you need to spell out acronyms
+# confinded to package ecosystem with terraformed --envo version:Finisher@v.001
+# secret adhesive within cloaked interval ""
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration adptions:
+# "https://docs.github.com/github./administering-a-repository./configuration-adoptions-for-dependency-updates./"
+
+version: 2
+updates:
+    package-ecosystem: "./" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"

@@ -2,24 +2,24 @@
 
 ## Notes
 
-1.  Only [Root CNAs](https://cve.mitre.org/cve/cna.html) or other members of the CVE Automation Working Group should create
+1.  Only [Roots]([https://cve.mitre.org/cve/cna.html](https://www.cve.org/PartnerInformation/Partner)) or other members of the CVE Automation Working Group should create
 pull requests or open issues in this repository currently.  Going
-forward, we hope to allow wider participation; eg, from
+forward, we hope to allow wider participation; e.g., from
 security researchers and other cybersecurity
 community members.  Until then, others who wish to contribute should
-use the [CVE Request web form](https://cveform.mitre.org). If you are a sub-CNA (e.g. the Kubernetes Project is a sub-CNA of the DWF) you MUST push within your hierarchy first according to the rules within that hierarchy. For example if you are within the DWF you MUST push to your immediate parents fork of the cvelist repo (e.g. for Kubernetes this would be the DWF cvelist fork at https://github.com/distributedweaknessfiling/cvelist).  
+use the [CVE Request web form](https://cveform.mitre.org). If you are a sub-CNA you MUST push within your hierarchy first according to the rules within that hierarchy.  
 
-2.  Only submit information to the MITRE cvelist repo that is intended to become public
+2.  Only submit information to the CVE Program cvelist repo that is intended to become public
 immediately.  There is **no support** for embargoed submissions!!
 
 3.  Understand that this is only a pilot - it could be changed
 significantly or even halted. 
 
 4.  Submissions should be made subject to the [CVE Submissions
-License Terms of Use](https://cve.mitre.org/about/termsofuse.html). 
+License Terms of Use](https://www.cve.org/Legal/TermsOfUse). 
 
 5.  It is **strongly recommended** that submissions use [signed
-commits](https://help.github.com/articles/signing-commits-with-gpg/). Please note that some hierarchies (e.g. the DWF) require all submissions to be signed. 
+commits](https://help.github.com/articles/signing-commits-with-gpg/). Please note that some hierarchies require all submissions to be signed. 
 
 6.  Submissions from CNAs should be formatted using the [CVE JSON
 format](https://github.com/CVEProject/automation-working-group/tree/master/cve_json_schema). 
@@ -29,10 +29,10 @@ offers a web-based interface for creating and editing information
 about one CVE at a time. 
 
 
-## Sending Data about CVE Entries to MITRE
+## Sending Data about CVE Records to the CVE Program
 
-0. If you haven't done so already, create an account on Github.com
-and fork the _cvelist_ repository from your parent CNA (e.g. if you are a root CNA you would fork [CVEProject/cvelist](https://github.com/CVEProject/cvelist/) and if you are a DWF sub-CNA you would fork [distributedweaknessfiling/cvelist](https://github.com/distributedweaknessfiling/cvelist)). You can either fork into your own account (e.g. from the command line this is the default), for example, if your account name
+0. If you haven't done so already, create an account on GitHub.com
+and fork the _cvelist_ repository (i.e., you would fork [CVEProject/cvelist](https://github.com/CVEProject/cvelist/)). You can either fork into your own account (e.g., from the command line this is the default), for example, if your account name
 is `$YOU`, this will result in a new repo named $YOU/cvelist. 
 [**NB**: `$YOU` is used throughout the rest of this file; substitute
 your own account name in any names, commands, URLs, etc.] You can also clone in to an organization
@@ -40,12 +40,6 @@ in GitHub via the web interface at https://github.com/CVEProject/cvelist by sele
 
 ```
 git remote add upstream git@github.com:CVEProject/cvelist.git
-```
-
-If you are a sub-CNA you would set it to your parent, e.g. for the DWF you would set it to `git@github.com: distributedweaknessfiling/cvelist.git`: 
-
-```
-git remote add upstream git@github.com: distributedweaknessfiling/cvelist.git
 ```
 
 1. Ensure your [fork is up to
@@ -69,9 +63,9 @@ git push
 We encourage you to include in that multiple, related updates whenever
 possible.  For example, if you publish monthly advisories, you might
 name your branch `Nov-2017` and use that to send us assignment
-information for all the CVE ids you assigned in that month.  If
+information for all the CVE IDs you assigned in that month.  If
 instead you publish advisories only as needed, you might name your
-branch using the advisory id (eg, `SA-2017-11-03`) and include in 
+branch using the advisory id (e.g., `SA-2017-11-03`) and include in 
 that assignment information for the CVE ids you assigned for only
 this one advisory. If you are working on multiple branches make sure you explicitly branch against master otherwise future branches may include work from other local branches:
 
@@ -109,15 +103,15 @@ The schema file is available in the [CVE Automation Working Group](https://githu
 
 5. **Review your updates carefully** and make sure they contain
 **only information you intend to make public**.  Once those reach
-Github.com, it's extremely difficult if not impossible to put it back
-under wraps.  For example, you may be able to check that every CVE id
+GitHub.com, it's extremely difficult if not impossible to put it back
+under wraps.  For example, you may be able to check that every CVE ID
 is mentioned in one of the references associated with it to avoid
 making public information about a vulnerability ahead of schedule. 
 Also, review the details in the description.  Do they agree with
 information in the associated references?
 
-6.  Commit your changes (eg, `git commit -av`) and, if necessary, push
-your branch from your local copy of your repo to Github.com (eg, `git
+6.  Commit your changes (e.g., `git commit -av`) and, if necessary, push
+your branch from your local copy of your repo to GitHub.com (e.g., `git
 push origin $YOUR_BRANCH`). 
 
 7.  Create a pull request to merge the changes in your new branch into
@@ -131,14 +125,14 @@ the form.  There are several fields that you need to worry about :
 * `compare` is the branch in your repo where the changes are; eg, `$YOUR_BRANCH`
 
 If you created your pull request using the URL above, make sure that
-Github reports that the branches can be merged.  If not, say because
+GitHub reports that the branches can be merged.  If not, say because
 you forgot to ensure your fork was synched with the upstream master,
 make additional commits in your branch to resolve the merge conflicts. 
 
 After a pull request has been submitted, several checks will be
 launched automatically, such as to perform schema validation and check
 ownership.  The checks may add comments and labels to the pull request
-and, by default, Github should notify you via email of those
+and, by default, GitHub should notify you via email of those
 automatically.  If the checks identify issues, you will need to
 address them before processing can continue. 
 

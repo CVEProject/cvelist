@@ -1,0 +1,19 @@
+name: JSON check
+
+on:
+  push:
+    paths:
+      - '**.json'
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: '2'
+      - name: deletion-check
+        uses: CVEDB/cve-tools/gsd-github-actions/deletion-check@main
+      - name: json-check
+        uses: CVEDB/cve-tools/gsd-github-actions/json-check@main

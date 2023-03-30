@@ -1,5 +1,8 @@
 # CVE Automation Working Group Git Pilot
 
+>**Warning**
+>This repository, the use of CVE JSON 4.0, and older [bulk download formats](https://cve.mitre.org/data/downloads/) will be deprecated on or before 2023-12-31. CVE JSON 5 content is available via the [CVE Servies API](https://cveawg.mitre.org/api-docs/#/CVE%20Record/cveGetSingle) and the [CVE List V5](https://github.com/CVEProject/cvelistV5) repository.
+
 The [CVE Automation Working
 Group](https://github.com/CVEProject/automation-working-group) is
 piloting use of git to share information about public vulnerabilities. 

@@ -1,3 +1,5 @@
+## Warning: [CVE Record Submission via Pilot PRs ending 6/30/2023](https://github.com/CVEProject/cvelist/discussions/8938)
+
 # CVE Automation Working Group Git Pilot
 
 The [CVE Automation Working

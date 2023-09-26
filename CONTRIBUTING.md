@@ -1,5 +1,9 @@
 # How to contribute
 
+## Don't
+
+New submissions to the CVE List should be made using the CVE Record Submission and Upload Service ([RSUS](https://cveproject.github.io/automation-cve-services)), and this mechanism for submitting new and updated CVE IDs. This mechanism of submitting to the CVE List will be phased out soon!
+
 ## Notes
 
 1.  Only [Roots]([https://cve.mitre.org/cve/cna.html](https://www.cve.org/PartnerInformation/Partner)) or other members of the CVE Automation Working Group should create

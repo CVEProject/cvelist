@@ -1,0 +1,15 @@
+mirror.sl3
+fuzzer/syzkaller/wget-log*
+fuzzer/syzkaller/unique.json
+fuzzer/syzkaller/delta.json
+fuzzer/syzkaller/processed.json
+fuzzer/syzkaller/list.json
+fuzzer/syzkaller/syzkaller/*
+fuzzer/syzkaller/second.json
+fuzzer/syzkaller/base.json
+fuzzer/syzkaller/syzkaller.tar.gz
+fuzzer/syzkaller/syzkaller_extid.txt
+fuzzer/syzkaller/syzkaller_fixed.txt
+fuzzer/syzkaller/reported_by.csv
+fuzzer/syzkaller/syzkaller.csv
+fuzzer/syzkaller/summary.json

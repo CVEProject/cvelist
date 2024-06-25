@@ -1,0 +1,37 @@
+name: Syzkaller Integration
+
+on:
+  workflow_dispatch:
+
+jobs:
+  syzk:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'write'
+      id-token: 'write'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - uses: 'google-github-actions/auth@v0.4.0'
+        with:
+          workload_identity_provider: 'projects/911569760349/locations/global/workloadIdentityPools/github-pool/providers/github-provider-new'
+          service_account: 'github@sdcpocs.iam.gserviceaccount.com'
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+      - run: pip install google-auth requests
+      - name: Update syzkaller pipeline
+        run: |
+          cd fuzzer/syzkaller
+          ./process_osv.sh base.json process.json > output-new.json
+          mv output-new.json output.json
+          mv process.json base.json
+      - run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add fuzzer/syzkaller/output.json fuzzer/syzkaller/base.json
+          git diff
+          git commit -m '[automatic] update output.json and base.json' || true
+          git push

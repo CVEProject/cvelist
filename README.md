@@ -1,6 +1,9 @@
-## Warning: This repository will be no longer maintained after 5/30/2025  Please refer to the official CVE List that resides [here](https://github.com/CVEProject/cvelistV5) for up to date CVE Information.
+# Warning: This repository will be no longer updated with new CVE information after 5/30/2025.  Please refer to the official CVE List that resides [here](https://github.com/CVEProject/cvelistV5) for up to date CVE Information.
 
 In March/2023 the CVE Program adopted a new official CVE Record Format (CVE Record Version 5.x which is defined [here](https://github.com/CVEProject/cve-schema) ) to advance automation and vulnerability information enrichment for the global vulnerability management ecosystem.  In June/2023, [the AWG Git Submission Pilot (hosted in this repository) was deprecated](https://github.com/CVEProject/cvelist/discussions/8938).  Although the CVE Record Git Submission capability was deprecated, this repository was maintained with updated CVE Information drawn from the official CVE List (and presented in CVE Record Version 4 format).  After 5/30/2025, this list will no longer be maintained.  The [official CVE List](https://github.com/CVEProject/cvelistV5) will be the only location that will be maintained by the CVE Program.
+
+### ---- Everything below the line is considered legacy information and no longer operational ---
+ ----------------------------------------------------------------------------------------------
 
 # CVE Automation Working Group Git Pilot
 
